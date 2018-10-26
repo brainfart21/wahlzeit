@@ -1,9 +1,7 @@
-travis.yml
 language: java
-jdk:
-- openjdk8
+jdk: openjdk8
 
-before_cahce:
+before_cache:
 - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
 - rm -fr $HOME/.gradle/chaches/*/plugin-resolution
 cache:
@@ -12,6 +10,5 @@ cache:
  - $HOME/.gradle/wrapper/
 
 install: ./gradlew assemble
-script:
-- ./gradlew test
+script: ./gradlew test
 
