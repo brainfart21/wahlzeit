@@ -1,21 +1,37 @@
+/*
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public
+ * License along with this program. If not, see
+ * <http://www.gnu.org/licenses/>.
+ */
+
 package org.wahlzeit.model;
 
-import java.util.Arrays;
+
 
 public class Coordinate {
 
-    private double x;
-    private double y;
-    private double z;
+    private double x, y, z;
 
 
     public Coordinate(double x,double y,double z){
-        setCoordinates(x, y, z);
+        setCoordinate(x, y, z);
     }
 
-    public Coordinate(double[] coordinates){
-        setCoordinates(coordinates);
+    public Coordinate(double[] coordinate){
+        setCoordinate(coordinate);
     }
+
+    public Coordinate(Coordinate coordinate) { this.setCoordinate(coordinate); }
 
     public double getX() {
         return x;
@@ -41,26 +57,28 @@ public class Coordinate {
         this.z = z;
     }
 
-    public void setCoordinates(double x, double y, double z) {
+    public void setCoordinate(double x, double y, double z) {
         setX(x);
         setY(y);
         setZ(z);
     }
 
-    public void setCoordinates(double[] coordinateArray) {
-        setX(coordinateArray[0]);
-        setY(coordinateArray[1]);
-        setZ(coordinateArray[2]);
+    public void setCoordinate(double[] coordinateArray) {
+        setCoordinate(coordinateArray[0], coordinateArray[1], coordinateArray[2]);
     }
 
-    public double[] getCoordinates(){
-        double[] coordinateArray = {x, y, z};
+    public void setCoordinate(Coordinate coordinate){
+        this.setCoordinate(coordinate.getCoordinate());
+    }
+
+    public double[] getCoordinate(){
+        double[] coordinateArray = {getX(), getY(), getZ()};
         return coordinateArray;
     }
 
     @Override
     public String toString(){
-        return "X: " + x + " Y: " + y + " Z: " + z;
+        return "X: " + x + "; Y: " + y + "; Z: " + z;
     }
 
     public double getDistance(Coordinate coordinate){
@@ -70,7 +88,7 @@ public class Coordinate {
     }
 
     public boolean isEqual(Coordinate coordinate){
-        return Arrays.equals(new double[]{x, y , z}, coordinate.getCoordinates());
+        return java.util.Arrays.equals(this.getCoordinate(), coordinate.getCoordinate());
     }
 
     public boolean equals(Coordinate coordinate) {
