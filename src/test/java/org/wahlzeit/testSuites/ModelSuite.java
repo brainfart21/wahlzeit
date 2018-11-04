@@ -6,7 +6,7 @@ import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
 @SuiteClasses({
-        org.wahlzeit.model.persistence.AbstractAdapterTest.class,
+        org.wahlzeit.model.persistence.ConcreteAbstractAdapterTest.class,
         org.wahlzeit.model.persistence.DatastoreAdapterTest.class,
         org.wahlzeit.model.AccessRightsTest.class,
         org.wahlzeit.model.CoordinateTest.class,

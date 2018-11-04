@@ -66,14 +66,14 @@ public class EmailAddressTest extends TestCase {
 		assertFalse(EmailAddress.EMPTY.isValid());
 	}
 
+	/**
+	 *
+	 */
 	public void testEqualEmailAddress(){
-		EmailAddress dummy = EmailAddress.getFromString("Test@Test.de");
-		assertTrue(dummy.isEqual(dummy));
-	}
-
-	public void testUnequalEmailAddress(){
-		EmailAddress dummy = EmailAddress.getFromString("Test@Test.de");
-		assertFalse(dummy.isEqual(EmailAddress.EMPTY));
+		EmailAddress address1 = EmailAddress.getFromString("Test@Test.de");
+		EmailAddress address2 = EmailAddress.getFromString("Test@Test.de");
+		assertTrue(address1.isEqual(address2));
+		assertFalse(address1.isEqual(EmailAddress.EMPTY));
 	}
 }
 

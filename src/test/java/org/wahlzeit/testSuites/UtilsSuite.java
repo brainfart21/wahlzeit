@@ -5,10 +5,8 @@ import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
 @SuiteClasses({
-        HandlersSuite.class,
-        ModelSuite.class,
-        ServicesSuite.class,
-        UtilsSuite.class
+        org.wahlzeit.utils.StringUtilTest.class,
+        org.wahlzeit.utils.VersionTest.class
 })
-public class AllTests {
+public class UtilsSuite {
 }
