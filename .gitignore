@@ -4,7 +4,6 @@
 /classes
 /src/main/webapp/WEB-INF/lib/
 /.settings/
-*.iml
 .gradle
 .idea
 .project
