@@ -15,7 +15,7 @@ private String toppings;
     }
 
     public Bread(){
-        this("Placeholder", null, 0, null);
+        this(null, null, 0, null);
     }
 
     public String getName() {
@@ -24,8 +24,9 @@ private String toppings;
 
     public void setName(String name) {
         if(name == null)
-            throw new IllegalArgumentException("Name must not be null!");
-        this.name = name;
+			this.name = "placeholder";
+        else
+        	this.name = name;
     }
 
     public String getDoughType() {

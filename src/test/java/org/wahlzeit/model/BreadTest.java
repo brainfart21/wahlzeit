@@ -11,6 +11,7 @@ public class BreadTest {
 
 	@Test
 	public void testNullBread(){
+		assertTrue(brot0 != null);
 		assertTrue(brot0.getName() != null);
 		assertTrue(brot0.getDoughType() != null);
 		assertTrue(brot0.getToppings() != null);
@@ -20,6 +21,7 @@ public class BreadTest {
 	public void testEquals(){
 		assertTrue(brot1.equals(brot2));
 		assertTrue(!brot0.equals(brot1));
+		assertTrue(!brot0.equals(new Object()));
 	}
 
 	@Test

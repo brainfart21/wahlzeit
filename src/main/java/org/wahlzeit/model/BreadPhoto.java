@@ -4,13 +4,23 @@ public class BreadPhoto extends Photo {
 
     private Bread bread;
 
-    public BreadPhoto() {
-        super();
-    }
+	public BreadPhoto() {
+		this(new Bread());
+	}
 
-    public BreadPhoto(PhotoId myId) {
-        super(myId);
-    }
+	public BreadPhoto(Bread bread) {
+		super();
+		setBread(bread);
+	}
+
+	public BreadPhoto(PhotoId myId) {
+		this(new Bread(), myId);
+	}
+
+	public BreadPhoto(Bread bread, PhotoId myId) {
+		super(myId);
+		setBread(bread);
+	}
 
     public void setBread(Bread bread) {
         if (bread == null) {
