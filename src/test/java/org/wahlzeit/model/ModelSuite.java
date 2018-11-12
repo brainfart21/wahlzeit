@@ -1,4 +1,4 @@
-package org.wahlzeit.testSuites;
+package org.wahlzeit.model;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
@@ -8,7 +8,8 @@ import org.junit.runners.Suite.SuiteClasses;
 @SuiteClasses({
         org.wahlzeit.model.persistence.ConcreteAbstractAdapterTest.class,
         org.wahlzeit.model.persistence.DatastoreAdapterTest.class,
-        org.wahlzeit.model.AccessRightsTest.class,
+		org.wahlzeit.model.AccessRightsTest.class,
+		org.wahlzeit.model.BreadTest.class,
         org.wahlzeit.model.CoordinateTest.class,
         org.wahlzeit.model.FlagReasonTest.class,
         org.wahlzeit.model.GenderTest.class,
