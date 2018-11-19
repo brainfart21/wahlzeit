@@ -28,7 +28,8 @@ public class LocationTest {
         Location location = new Location(LocationName);
         //toString output string without coordinate correct?
         assertTrue(location.toString().equals("Location name: " + LocationName));
-        Coordinate coordinate = new Coordinate(1, 2, 3);
+        CartesianCoordinate coordinate = new CartesianCoordinate(1, 2, 3) {
+		};
         location.setCoordinate(coordinate);
         //toString output string with coordinate correct and coordinate correctly added?
         assertTrue(location.toString().equals("Location name: " + LocationName+ "; Coordinate: " + coordinate.toString()));

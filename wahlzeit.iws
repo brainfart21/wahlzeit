@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Project Production Files" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="22611447-b4b8-49a0-9359-ea042b13ca66" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Bread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Bread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/BreadPhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/BreadPhoto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/BreadPhotoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/BreadPhotoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/BreadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/BreadTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/ModelSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/ModelSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/persistence/ConcreteAbstractAdapterTest.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/CartesianCoordinate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/SphericCoordinate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Coordinate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/BreadPhotoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/BreadPhotoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/CoordinateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/CoordinateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/LocationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/LocationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wahlzeit.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/wahlzeit.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wahlzeit.iws" beforeDir="false" afterPath="$PROJECT_DIR$/wahlzeit.iws" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -59,25 +65,26 @@
     <session id="636543849">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.26" value="1" />
-          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.25" value="2" />
+          <entry key="project.open.time.26" value="2" />
+          <entry key="project.open.time.28" value="2" />
           <entry key="project.open.time.30" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="117" />
+          <entry key="java" value="166" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -85,19 +92,19 @@
         <counts>
           <entry key="CLASS" value="2" />
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="117" />
+          <entry key="JAVA" value="166" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="java" value="5482" />
+          <entry key="java" value="7849" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5482" />
+          <entry key="JAVA" value="7849" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -106,106 +113,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/ModelSuite.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/CartesianCoordinate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="850">
+              <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Bread.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/SphericCoordinate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/BreadPhoto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-              <folding>
-                <element signature="e#117#118#0" expanded="true" />
-                <element signature="e#141#142#0" expanded="true" />
-                <element signature="e#256#257#0" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/BreadTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="799">
+              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/BreadPhotoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Photo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="130" selection-start-line="130" selection-end-line="130" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/AllTests.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/CoordinateTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/BreadPhotoFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-              <folding>
-                <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#270#271#0" expanded="true" />
-                <element signature="e#314#315#0" expanded="true" />
-                <element signature="e#344#345#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/PhotoFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="68" column="76" lean-forward="true" selection-start-line="68" selection-start-column="76" selection-end-line="68" selection-end-column="76" />
+              <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -223,7 +152,27 @@
     <findStrings>
       <find>toString</find>
       <find>Photo</find>
+      <find>public</find>
+      <find>Spheric</find>
+      <find>X</find>
+      <find>Y</find>
+      <find>Z</find>
+      <find>True</find>
+      <find>Equals</find>
     </findStrings>
+    <replaceStrings>
+      <replace>private</replace>
+      <replace>Cartesian</replace>
+      <replace>SC</replace>
+      <replace>Radius</replace>
+      <replace>radius</replace>
+      <replace>Phi</replace>
+      <replace>phi</replace>
+      <replace>Theta</replace>
+      <replace>theta</replace>
+      <replace>Equals</replace>
+      <replace>True</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>I:\ADAP Projekt\wahlzeit\src\main\java\org\wahlzeit</dir>
     </dirStrings>
@@ -757,11 +706,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Photo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Coordinate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Location.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/wahlzeit/testSuits/AllTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/CoordinateTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/LocationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/wahlzeit/testSuites/EmailServiceSuite.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/wahlzeit/testSuites/HandlersSuite.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/wahlzeit/services/EmailAddress.java" />
@@ -781,12 +726,17 @@
         <option value="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Bread.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/ModelSuite.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/BreadTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Coordinate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Location.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/LocationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/BreadPhotoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/CartesianCoordinate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wahlzeit/model/SphericCoordinate.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/wahlzeit/model/CoordinateTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="960" />
+  <component name="ProjectFrameBounds">
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -796,7 +746,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -843,6 +792,15 @@
               <item name="wahlzeit" type="b2602c69:ProjectViewProjectNode" />
               <item name="wahlzeit" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wahlzeit" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wahlzeit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wahlzeit" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -883,12 +841,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542016368914" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542615880238" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
@@ -913,12 +872,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BreadPhotoTest">
+  <component name="RunManager" selected="JUnit.CoordinateTest.calculationTest">
     <configuration name="AllTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wahlzeit_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.wahlzeit.utils.*" />
+          <option name="PATTERN" value="org.wahlzeit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -942,7 +901,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BreadPhotoTest.notNullTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CoordinateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wahlzeit_test" />
       <extension name="coverage">
         <pattern>
@@ -951,14 +910,28 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.wahlzeit.model" />
-      <option name="MAIN_CLASS_NAME" value="org.wahlzeit.model.BreadPhotoTest" />
-      <option name="METHOD_NAME" value="notNullTest" />
+      <option name="MAIN_CLASS_NAME" value="org.wahlzeit.model.CoordinateTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoordinateTest.calculationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wahlzeit_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.wahlzeit.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.wahlzeit.model" />
+      <option name="MAIN_CLASS_NAME" value="org.wahlzeit.model.CoordinateTest" />
+      <option name="METHOD_NAME" value="calculationTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BreadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CoordinateTest.equalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wahlzeit_test" />
       <extension name="coverage">
         <pattern>
@@ -967,21 +940,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.wahlzeit.model" />
-      <option name="MAIN_CLASS_NAME" value="org.wahlzeit.model.BreadTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConcreteAbstractAdapterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wahlzeit_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.wahlzeit.model.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.wahlzeit.model.persistence" />
-      <option name="MAIN_CLASS_NAME" value="org.wahlzeit.model.persistence.ConcreteAbstractAdapterTest" />
+      <option name="MAIN_CLASS_NAME" value="org.wahlzeit.model.CoordinateTest" />
+      <option name="METHOD_NAME" value="equalTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1010,19 +971,19 @@
     </configuration>
     <list>
       <item itemvalue="Remote.Remote Febug Config" />
-      <item itemvalue="JUnit.AllTests" />
-      <item itemvalue="JUnit.ConcreteAbstractAdapterTest" />
-      <item itemvalue="JUnit.BreadTest" />
-      <item itemvalue="JUnit.BreadPhotoTest.notNullTest" />
       <item itemvalue="JUnit.BreadPhotoTest" />
+      <item itemvalue="JUnit.CoordinateTest.equalTest" />
+      <item itemvalue="JUnit.CoordinateTest" />
+      <item itemvalue="JUnit.AllTests" />
+      <item itemvalue="JUnit.CoordinateTest.calculationTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BreadPhotoTest" />
-        <item itemvalue="JUnit.BreadPhotoTest.notNullTest" />
+        <item itemvalue="JUnit.CoordinateTest.calculationTest" />
         <item itemvalue="JUnit.AllTests" />
-        <item itemvalue="JUnit.BreadTest" />
-        <item itemvalue="JUnit.ConcreteAbstractAdapterTest" />
+        <item itemvalue="JUnit.CoordinateTest" />
+        <item itemvalue="JUnit.CoordinateTest.equalTest" />
+        <item itemvalue="JUnit.BreadPhotoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1040,35 +1001,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConcreteAbstractAdapterTest - 2018.11.04 at 23h 42m 33s.xml">
-      <configuration name="ConcreteAbstractAdapterTest" configurationId="JUnit" />
+    <history-entry file="CoordinateTest_equalTest - 2018.11.18 at 23h 18m 12s.xml">
+      <configuration name="CoordinateTest.equalTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConcreteAbstractAdapterTest - 2018.11.04 at 23h 42m 50s.xml">
-      <configuration name="ConcreteAbstractAdapterTest" configurationId="JUnit" />
+    <history-entry file="CoordinateTest_equalTest - 2018.11.18 at 23h 18m 45s.xml">
+      <configuration name="CoordinateTest.equalTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ModelSuite - 2018.11.04 at 23h 43m 57s.xml">
-      <configuration name="ModelSuite" configurationId="JUnit" />
+    <history-entry file="CoordinateTest_equalTest - 2018.11.18 at 23h 18m 58s.xml">
+      <configuration name="CoordinateTest.equalTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConcreteAbstractAdapterTest - 2018.11.04 at 23h 48m 24s.xml">
-      <configuration name="ConcreteAbstractAdapterTest" configurationId="JUnit" />
+    <history-entry file="CoordinateTest_equalTest - 2018.11.18 at 23h 19m 07s.xml">
+      <configuration name="CoordinateTest.equalTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTests - 2018.11.10 at 23h 29m 30s.xml">
+    <history-entry file="CoordinateTest - 2018.11.19 at 09h 07m 28s.xml">
+      <configuration name="CoordinateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AllTests - 2018.11.19 at 09h 08m 04s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BreadTest - 2018.11.12 at 09h 42m 03s.xml">
-      <configuration name="BreadTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AllTests - 2018.11.12 at 09h 45m 58s.xml">
+    <history-entry file="AllTests - 2018.11.19 at 09h 08m 10s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTests - 2018.11.12 at 10h 11m 47s.xml">
-      <configuration name="AllTests" configurationId="JUnit" />
+    <history-entry file="CoordinateTest_calculationTest - 2018.11.19 at 09h 20m 13s.xml">
+      <configuration name="CoordinateTest.calculationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTests - 2018.11.12 at 10h 41m 29s.xml">
-      <configuration name="AllTests" configurationId="JUnit" />
+    <history-entry file="CoordinateTest_calculationTest - 2018.11.19 at 09h 22m 24s.xml">
+      <configuration name="CoordinateTest.calculationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BreadPhotoTest_notNullTest - 2018.11.12 at 10h 50m 47s.xml">
-      <configuration name="BreadPhotoTest.notNullTest" configurationId="JUnit" />
+    <history-entry file="CoordinateTest_calculationTest - 2018.11.19 at 09h 22m 30s.xml">
+      <configuration name="CoordinateTest.calculationTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1081,10 +1042,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18656716" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33333334" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1093,18 +1054,20 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.28850326" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3286334" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.20824295" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49888888" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2030905" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286334" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5011111" side_tool="true" weight="0.33443707" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.3286334" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.329718" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.329718" />
-      <window_info anchor="bottom" id="Dependency Viewer" order="13" weight="0.3289183" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="13" weight="0.3286334" />
+      <window_info anchor="bottom" id="Analyze Dataflow from" order="14" weight="0.329718" />
+      <window_info anchor="bottom" id="Analyze Dataflow to" order="15" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1114,183 +1077,57 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Module Dependencies" order="9" weight="0.32995737" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>SC.getCartesianDistance(SC2)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>CC.getCartesianDistance(CC2)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>SC.getCentralAngle(SC2)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>CC.getCentralAngle(CC2)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>CC.getCentralAngle(CC0)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>SC.getCartesianDistance(SC0)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>CC2.asSphericCoordinate()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>coordinate.asSphericCoordinate()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/UserStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/ValueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="36" column="55" lean-forward="true" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/PhotoStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="166" column="5" lean-forward="true" selection-start-line="166" selection-start-column="5" selection-end-line="166" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://I:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="231" column="6" lean-forward="true" selection-start-line="231" selection-start-column="6" selection-end-line="231" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Gender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="131" column="5" lean-forward="true" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/PhotoFilterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/GuestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/TagsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar!/junit/framework/TestSuite.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/CoordinateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/testEnvironmentProvider/LocalDatastoreServiceTestConfigProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/testEnvironmentProvider/RegisteredOfyEnvironmentProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/testEnvironmentProvider/SysConfigProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/testEnvironmentProvider/UserServiceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/testEnvironmentProvider/UserSessionProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/testEnvironmentProvider/WebFormHandlerProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/junit/framework/TestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="83" column="23" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://I:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/Serializable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2465">
-          <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/services/mailing/AbstractEmailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/services/EmailAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="113" column="7" lean-forward="true" selection-start-line="113" selection-start-column="7" selection-end-line="113" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/services/mailing/EmailServiceManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/services/mailing/LoggingEmailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/services/mailing/MockEmailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/services/mailing/SmtpEmailService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-132">
@@ -1347,30 +1184,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Coordinate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/LocationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/PhotoUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1392,63 +1205,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/PhotoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="68" column="76" lean-forward="true" selection-start-line="68" selection-start-column="76" selection-end-line="68" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/BreadPhotoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-          <folding>
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/persistence/ConcreteAbstractAdapterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/AllTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/ModelSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Bread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/persistence/ConcreteAbstractAdapterTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/persistence/DatastoreAdapterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1463,43 +1220,272 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/BreadPhoto.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Bread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-          <folding>
-            <element signature="e#117#118#0" expanded="true" />
-            <element signature="e#141#142#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="470">
+          <caret line="69" column="18" selection-start-line="69" selection-end-line="73" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://I:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="147" column="19" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/AbstractModelConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/ModelConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2879">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/main/ModelMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/main/ScriptMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://I:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17340">
+          <caret line="1087" column="15" selection-start-line="1087" selection-start-column="15" selection-end-line="1087" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/services/SysConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="67" column="17" lean-forward="true" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/tools/SetUpFlowers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/main/AbstractMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar!/javax/servlet/ServletContextListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar!/javax/servlet/ServletContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="91" column="18" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/apps/Wahlzeit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/main/ServiceMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://I:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Override.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="682" selection-start-line="682" selection-end-line="682" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/ModelSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/BreadTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.objectify/objectify/5.1.21/524d39f8cc21e3b8ca2982cdcd6c792e4a011ea6/objectify-5.1.21-sources.jar!/com/googlecode/objectify/ObjectifyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="53" column="35" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/BreadPhoto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/rules/ExternalResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/testEnvironmentProvider/SysConfigProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Photo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
+        <state relative-caret-position="428">
+          <caret line="143" column="19" lean-forward="true" selection-start-line="143" selection-start-column="19" selection-end-line="143" selection-end-column="19" />
+          <folding>
+            <element signature="e#3938#3939#0" expanded="true" />
+            <element signature="e#3973#3974#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/services/OfyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/BreadPhotoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/LocationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/BreadPhotoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/PhotoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/Coordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://I:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/StrictMath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="508" column="32" selection-start-line="508" selection-start-column="32" selection-end-line="508" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://I:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1472">
+          <caret line="516" column="28" selection-start-line="516" selection-start-column="28" selection-end-line="516" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="65" column="24" lean-forward="true" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/CartesianCoordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wahlzeit/model/SphericCoordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/AllTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/wahlzeit/model/CoordinateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
         </state>
       </provider>
     </entry>

@@ -18,7 +18,7 @@ package org.wahlzeit.model;
 
 public class Location {
     private String name;
-    private Coordinate coordinate;
+    private CartesianCoordinate coordinate;
 
 
     public Location(String name) {
@@ -26,7 +26,7 @@ public class Location {
     }
 
 
-    public Location(String name, Coordinate coordinate) {
+    public Location(String name, CartesianCoordinate coordinate) {
         this.name = name;
         this.coordinate = coordinate;
     }
@@ -44,7 +44,7 @@ public class Location {
         return coordinate;
     }
 
-    public void setCoordinate(Coordinate coordinate) {
+    public void setCoordinate(CartesianCoordinate coordinate) {
         this.coordinate = coordinate;
     }
 
