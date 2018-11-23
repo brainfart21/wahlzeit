@@ -1,6 +1,6 @@
 package org.wahlzeit.model;
 
-public class CartesianCoordinate implements Coordinate {
+public class CartesianCoordinate extends AbstractCoordinate {
 
 	private double x , y, z;
 
@@ -57,27 +57,14 @@ public class CartesianCoordinate implements Coordinate {
 			this.setCartesianCoordinate(coordinate.getX(), coordinate.getY(), coordinate.getZ());
 	}
 
-
-	private double doGetCartesianDistance(CartesianCoordinate coordinate){
-		return Math.sqrt(Math.pow((this.getX() - coordinate.getX()), 2)
-					   + Math.pow((this.getY() - coordinate.getY()), 2)
-					   + Math.pow((this.getZ() - coordinate.getZ()), 2));
-	}
-
 	@Override
 	public CartesianCoordinate asCartesianCoordinate() {
 			return this;
 	}
 
 	@Override
-	public double getCartesianDistance(Coordinate coordinate) {
-		CartesianCoordinate tmpArg = coordinate.asCartesianCoordinate();
-		return this.doGetCartesianDistance(tmpArg);
-	}
-
-	@Override
 	public SphericCoordinate asSphericCoordinate() {
-		double radius = this.doGetCartesianDistance(new CartesianCoordinate());
+		double radius = this.getCartesianDistance(new CartesianCoordinate());
 		double theta = Math.acos(this.getZ()/radius);
 		double phi = Math.atan2(this.getY(), this.getX());
 
@@ -85,26 +72,11 @@ public class CartesianCoordinate implements Coordinate {
 	}
 
 	@Override
-	public double getCentralAngle(Coordinate coordinate) {
-		SphericCoordinate tmpThis = this.asSphericCoordinate();
-		return tmpThis.getCentralAngle(coordinate);
-	}
-
-	@Override
 	public String toString() {
 		return "CartesianCoordinate{" +
-				"x=" + this.getX() +
-				", y=" + this.getY() +
-				", z=" + this.getZ() +
+				"x=" + x +
+				", y=" + y +
+				", z=" + z +
 				'}';
-	}
-
-	@Override
-	public boolean isEqual(Coordinate coordinate){
-		CartesianCoordinate tmpArg = coordinate.asCartesianCoordinate();
-		double delta = 0.000001;
-		return 	   Math.abs(this.getX() - tmpArg.getX()) < delta
-				&& Math.abs(this.getY() - tmpArg.getY()) < delta
-				&& Math.abs(this.getZ() - tmpArg.getZ()) < delta;
 	}
 }

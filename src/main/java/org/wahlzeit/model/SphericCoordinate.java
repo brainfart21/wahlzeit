@@ -1,6 +1,6 @@
 package org.wahlzeit.model;
 
-public class SphericCoordinate implements Coordinate {
+public class SphericCoordinate extends AbstractCoordinate {
 
 	private double radius, phi, theta;
 
@@ -58,12 +58,6 @@ public class SphericCoordinate implements Coordinate {
 		this.setSphericCoordinate(coordinate.getRadius(), coordinate.getPhi(), coordinate.getTheta());
 	}
 
-	private double doGetCentralAngle(SphericCoordinate coordinate) {
-		return Math.acos(Math.sin(this.getPhi()) * Math.sin(coordinate.getPhi())
-				+ Math.cos(this.getPhi()) * Math.cos(coordinate.getPhi())
-				* Math.cos(coordinate.getTheta() - this.getTheta())	);
-	}
-
 	@Override
 	public CartesianCoordinate asCartesianCoordinate() {
 		double x = this.getRadius() * Math.sin(this.getTheta()) * Math.cos(this.getPhi());
@@ -73,29 +67,8 @@ public class SphericCoordinate implements Coordinate {
 	}
 
 	@Override
-	public double getCartesianDistance(Coordinate coordinate) {
-		CartesianCoordinate tmpThis = this.asCartesianCoordinate();
-		return tmpThis.getCartesianDistance(coordinate);
-	}
-
-	@Override
 	public SphericCoordinate asSphericCoordinate() {
 		return this;
-	}
-
-	@Override
-	public double getCentralAngle(Coordinate coordinate) {
-		SphericCoordinate tmpArg = coordinate.asSphericCoordinate();
-		return this.doGetCentralAngle(tmpArg);
-	}
-
-	@Override
-	public boolean isEqual(Coordinate coordinate) {
-		SphericCoordinate tmpArg = coordinate.asSphericCoordinate();
-		double delta = 0.000001;
-		return 	   Math.abs(this.getRadius() - tmpArg.getRadius()) < delta
-				&& Math.abs(this.getPhi() - tmpArg.getPhi()) < delta
-				&& Math.abs(this.getTheta() - tmpArg.getTheta()) < delta;
 	}
 
 	@Override

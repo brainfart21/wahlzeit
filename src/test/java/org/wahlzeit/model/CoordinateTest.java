@@ -62,17 +62,17 @@ public class CoordinateTest {
 
 	@Test
 	public void toStringTest() {
-		assertEquals(CC.toString(),
+		assertTrue(CC.toString().equals(
 				"CartesianCoordinate{" +
 				"x=" + CC.getX() +
 				", y=" + CC.getY() +
 				", z=" + CC.getZ() +
-				'}');
-		assertEquals(SC.toString(),
+				'}'));
+		assertTrue(SC.toString().equals(
 				"SphericCoordinate{" +
 				"radius=" + radius +
 				", phi=" + phi +
 				", theta=" + theta +
-				'}');
+				'}'));
 	}
 }
